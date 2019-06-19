@@ -1,0 +1,11 @@
+<ul>
+  {{#each burgers}}
+  	<li>
+  		<p><span class="label">ID:</span> {{this.burger_id}}</p>
+      <p><span class="label">Quote:</span> {{this.burger_name}}</p>
+      <button data-id="{{this.id}}" class="delquote">Delete</button>
+
+      <a href="/{{this.id}}">Update this burger</a>
+  	</li>
+  {{/each}}
+</ul>
